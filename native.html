@@ -99,6 +99,9 @@
                 <tr>
                     <td>tag name</td><td>Find the element by tag name.</td>
                 </tr>
+                <tr>
+                    <td>xpath</td><td>Find the element by xpath expression.</td>
+                </tr>
             </table>
             <h3 id="findElements">Native locator examples</h3>
             Sample app view hierarchy in the inspector:
@@ -146,6 +149,17 @@
 
             <p>Java:
             <pre><code>driver.findElement(By.partialLinkText("EN Butto"));</code></pre>
+            </p>
+            </p>
+
+           <h2>XPath</h2>
+            <p>The element can be found by XPath expresion.
+            <p>Ruby:
+            <pre><code>driver.find_element(:xpath,'//Button[@id="buttonTest"]')</code></pre>
+            </p>
+
+            <p>Java:
+            <pre><code>driver.findElement(By.xpath("//Button[@id='buttonTest']"));</code></pre>
             </p>
             </p>
 
