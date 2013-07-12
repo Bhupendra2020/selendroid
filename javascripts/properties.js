@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 ios-driver committers.
+ * Copyright 2012 selendroid committers.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  * in compliance with the License. You may obtain a copy of the License at
@@ -14,8 +14,8 @@
 
 $(document).ready(function ($) {
 
-    var version = "0.4-SNAPSHOT";
-    var downloadFile = "https://s3-us-west-1.amazonaws.com/selendroid/selendroid-standalone-0.4-SNAPSHOT.jar";
+    var version = "0.4.2";
+    var downloadFile = "https://s3-us-west-1.amazonaws.com/selendroid/selendroid-standalone-0.4.2.jar";
     var github = "https://github.com/dominikdary/selendroid/";
 
     $("#download_me").attr('href', downloadFile);
@@ -28,6 +28,7 @@ $(document).ready(function ($) {
 
 buildFooter = function () {
     $("#footer_wrap").html('<a href="https://github.com/DominikDary/selendroid"></a>' +
+        '<a href="http://groups.google.com/group/selendroid" class="button">Selendroid Mailing list</a>'+
         'is maintained by <a href="https://github.com/DominikDary/selendroid/blob/master/AUTHORS">Selendroid authors</a>.' +
         '<p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>');
 };
